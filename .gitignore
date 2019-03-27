@@ -1,0 +1,10 @@
+.idea
+.htaccess
+*.swp
+*.swo
+*.exe
+*.exe~
+conf/app.conf
+Reptile
+config-sdk.log
+Reptile.logfile

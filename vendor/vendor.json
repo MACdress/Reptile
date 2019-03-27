@@ -1,0 +1,82 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "e9W8F2ns6pwhJ8ocL5nsJDfYA+M=",
+			"path": "github.com/astaxie/beego",
+			"revision": "40d653e659caf86e72bcad254a52cc839d347b25",
+			"revisionTime": "2019-02-12T18:10:25Z"
+		},
+		{
+			"checksumSHA1": "qFmnMbrtRzi14+5scXmKq+/9xyU=",
+			"path": "github.com/astaxie/beego/config",
+			"revision": "40d653e659caf86e72bcad254a52cc839d347b25",
+			"revisionTime": "2019-02-12T18:10:25Z"
+		},
+		{
+			"checksumSHA1": "1Km5uX1hA20jXHQ//FInzcVSWAQ=",
+			"path": "github.com/astaxie/beego/context",
+			"revision": "40d653e659caf86e72bcad254a52cc839d347b25",
+			"revisionTime": "2019-02-12T18:10:25Z"
+		},
+		{
+			"checksumSHA1": "6CUKSTe7nirUqQ7kctbv7kkF1eA=",
+			"path": "github.com/astaxie/beego/context/param",
+			"revision": "40d653e659caf86e72bcad254a52cc839d347b25",
+			"revisionTime": "2019-02-12T18:10:25Z"
+		},
+		{
+			"checksumSHA1": "dEoKcnTZhVqUag0hjjgAX4IhOsE=",
+			"path": "github.com/astaxie/beego/grace",
+			"revision": "40d653e659caf86e72bcad254a52cc839d347b25",
+			"revisionTime": "2019-02-12T18:10:25Z"
+		},
+		{
+			"checksumSHA1": "jf/YI3zTT5/Dqvr0V2gLyWzlLbw=",
+			"path": "github.com/astaxie/beego/logs",
+			"revision": "40d653e659caf86e72bcad254a52cc839d347b25",
+			"revisionTime": "2019-02-12T18:10:25Z"
+		},
+		{
+			"checksumSHA1": "1cBWt3QecE8T5LXoY4Nd7dCRlLc=",
+			"path": "github.com/astaxie/beego/session",
+			"revision": "40d653e659caf86e72bcad254a52cc839d347b25",
+			"revisionTime": "2019-02-12T18:10:25Z"
+		},
+		{
+			"checksumSHA1": "pjVYE2nh0XTgiXO4wY6upyhy6nQ=",
+			"path": "github.com/astaxie/beego/toolbox",
+			"revision": "40d653e659caf86e72bcad254a52cc839d347b25",
+			"revisionTime": "2019-02-12T18:10:25Z"
+		},
+		{
+			"checksumSHA1": "wyz5HgdoDurteHhp63m+CwKx7zg=",
+			"path": "github.com/astaxie/beego/utils",
+			"revision": "40d653e659caf86e72bcad254a52cc839d347b25",
+			"revisionTime": "2019-02-12T18:10:25Z"
+		},
+		{
+			"checksumSHA1": "J43LAg1rYN1mK/HbXc06EJQ6VbM=",
+			"origin": "github.com/astaxie/beego/vendor/golang.org/x/crypto/acme",
+			"path": "golang.org/x/crypto/acme",
+			"revision": "40d653e659caf86e72bcad254a52cc839d347b25",
+			"revisionTime": "2019-02-12T18:10:25Z"
+		},
+		{
+			"checksumSHA1": "J7oQm93/jAKoG6lW1wcTt4nIIdo=",
+			"origin": "github.com/astaxie/beego/vendor/golang.org/x/crypto/acme/autocert",
+			"path": "golang.org/x/crypto/acme/autocert",
+			"revision": "40d653e659caf86e72bcad254a52cc839d347b25",
+			"revisionTime": "2019-02-12T18:10:25Z"
+		},
+		{
+			"checksumSHA1": "d3jYBfW+YmOxsa5o8m6XyywVbIo=",
+			"origin": "github.com/astaxie/beego/vendor/gopkg.in/yaml.v2",
+			"path": "gopkg.in/yaml.v2",
+			"revision": "40d653e659caf86e72bcad254a52cc839d347b25",
+			"revisionTime": "2019-02-12T18:10:25Z"
+		}
+	],
+	"rootPath": "Reptile"
+}
