@@ -18,9 +18,4 @@ func main(){
 			Url:`http://www.zhenai.com/zhenghun`,
 			ParserFunc:parser.CityList,
 		})
-	//e.Run(
-	//	engine.Request{
-	//		Url:"http://www.zhenai.com/zhenghun/shanghai",
-	//		ParserFunc:parser.ParseCity,
-	//	})
 }

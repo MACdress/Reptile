@@ -15,8 +15,9 @@ type Scheduler interface {
 
 type ReadNotifier interface {
 	WorkerReady(w chan Request)
-
 }
+
+var visitedUrls = make(map[string]bool)
 
 func (c *ConcurrentEngine) Run(seeds ...Request){
 	c.Scheduler.Run()
@@ -25,7 +26,9 @@ func (c *ConcurrentEngine) Run(seeds ...Request){
 		createWorker(c.Scheduler.WorkerChan(),out,c.Scheduler)
 	}
 	for _,r := range  seeds{
-		c.Scheduler.Submit(r)
+		if !(isDuplicate(r.Url)) {
+			c.Scheduler.Submit(r)
+		}
 	}
 	for{
 		result := <-out
@@ -52,4 +55,13 @@ func createWorker(in chan Request,out chan ParseResult, read ReadNotifier) {
 			out <- result
 		}
 	}()
+}
+
+
+func isDuplicate(url string)bool{
+	if visitedUrls[url]{
+		return true
+	}
+	visitedUrls[url] = true
+	return false
 }

@@ -15,7 +15,8 @@ type Profile struct {
 	XinZuo string `json:"xin_zuo"`
 	MyImg string `json:"my_img"`//照片
 	OtherImg []string `json:"other_img"`//其他照片
-	City string `gorm:"column:city"`//城市
+	City string `json:"city"`//城市
+	Url string `json:"url"`
 }
 type ProfileModel struct {
 	gorm.Model

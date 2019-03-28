@@ -18,12 +18,13 @@ var IncomeRe = regexp.MustCompile(`<div class="m-btn purple" data-v-bff6f798>月
 var MarriageRe = regexp.MustCompile(`<div class="purple-btns" data-v-bff6f798><div class="m-btn purple" data-v-bff6f798>([^<]+)</div>`)//婚姻状况
 var OccupationRe = regexp.MustCompile(`<div class="m-btn purple" data-v-bff6f798>工作地:([^<]+)</div>`)//工作地
 var XinZuoRe = regexp.MustCompile(`岁</div><div class="m-btn purple" data-v-bff6f798>([^<]+)</div>`)//星座
-var OtherImgRe = regexp.MustCompile(`(https://photo.zastatic.com/images/photo/[^\?]+)\?`)//照片
+var OtherImgRe = regexp.MustCompile(`(https://photo.zastatic.com/images/photo/[^?]+)\?`)//照片
 
-func ParseProfile(contents []byte,img string ,name string)engine.ParseResult{
+func ParseProfile(contents []byte,img string ,name string,url string)engine.ParseResult{
 	profile := user.Profile{
 		MyImg:img,
 		Name:name,
+		Url:url,
 	}
 	if age,err := strconv.Atoi(utils.ExtractString(contents,AgeRe));err!=nil {
 		beego.Info("年龄值不正确")
